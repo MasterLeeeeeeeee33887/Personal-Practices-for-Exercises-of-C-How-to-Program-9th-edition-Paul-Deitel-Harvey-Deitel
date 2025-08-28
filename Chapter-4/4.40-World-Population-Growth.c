@@ -4,7 +4,8 @@
 //https://www.worldometers.info/world-population/
 int main(void)
 {
-	long long year = 1, population = 8243167084;
+	int year = 1;
+	long long population = 8243167084;
 	double rate = 0.0085;
 	long long increase = (double)population * rate;
 	int doubling_year = 0;
@@ -19,7 +20,7 @@ int main(void)
 			doubling_year = year;
 		}
 	}
-	printf("\nThe doubling year is at the %dth year", doubling_year);
+	printf("%s", "\nThe doubling year is beyond 75 years");
 
 	return 0;
 }
